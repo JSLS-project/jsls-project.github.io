@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans';
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 h1 {
@@ -73,5 +74,5 @@ div#page-header > img {
 }
 
 section#blog {
-    
+    flex-grow: 1;
 }
