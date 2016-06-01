@@ -19,7 +19,7 @@ window.onload = function(){
     "status" : function(){
       pull_data("https://api.github.com/repos/JSLS-project/JavaScript-Language-Syntax-Schema/commits/master", function(response){
         response = JSON.parse(response)
-        var status = window.getElementById("github-status"),
+        var status = document.getElementById("github-status"),
             status_doc = document.createElement("div"),
             user_doc = document.createElement("div"),
             user_link = document.createElement("a"),
