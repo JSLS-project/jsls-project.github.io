@@ -9,3 +9,11 @@ body > section {
     width: 50%;
     height: 100%;
 }
+
+section#navigation {
+    max-width: 420px;
+}
+
+div#page-header {
+    height: 300px;
+}
