@@ -22,6 +22,7 @@ div#github-buttons > div:nth-of-type(2) {
     padding: 0;
     width: 180px;
     padding-bottom: 10px;
+    overflow: hidden;
 }
 
 div#github-menu {
