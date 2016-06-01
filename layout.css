@@ -45,8 +45,16 @@ body > section {
     height: 100%;
 }
 
+section#sudo {
+    max-width: 420px;
+}
+
 section#navigation {
     max-width: 420px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 div#page-header {
