@@ -52,6 +52,16 @@ section#navigation {
 
 div#page-header {
     height: 300px;
+    text-align: center;
+}
+
+div#page-header > * {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div#page-header > img {
+    width: 260px;
 }
 
 section#blog {
