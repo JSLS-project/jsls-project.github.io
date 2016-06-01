@@ -108,3 +108,7 @@ div#github-buttons[data-github="graphs"] div#github-menu > div:nth-of-type(2) > 
 div#github-buttons[data-github="graphs"] div#github-menu > div:nth-of-type(2) > div:nth-of-type(3) > i {
     background-color: #9C85D8;
 }
+
+div#github-buttons[data-door="opened"] div#github-menu > div:nth-of-type(2) {
+    max-height: initial;
+}
