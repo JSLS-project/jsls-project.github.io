@@ -26,7 +26,7 @@ window.onload = function(){
             commit_doc = document.createElement("div"),
             commit_text = document.createElement("p"),
             commit_link = document.createElement("a");
-        user_link.setAttribute("onclick", "a(" + response.committer.html_url + "")");
+        user_link.setAttribute("onclick", "a(" + response.committer.html_url + ")");
         user_link.innerText = response.commit.author.name + " (" + response.committer.login + ")"
         user_doc.appendChild(user_link);
         status_doc.appendChild(user_doc);
