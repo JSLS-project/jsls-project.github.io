@@ -4,6 +4,7 @@ function a(href){
   }
   var el = document.createElement("a");
   el.setAttribute('href',href);
+  el.setAttribute('target', '_blank')
   if (el.fireEvent) {
     el.fireEvent('onclick');
   } else {
