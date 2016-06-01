@@ -1,4 +1,4 @@
-function popUpNoBlocker(href){
+function a(href){
   if(typeof href === "undefined" || href === ""){
     return;
   }
