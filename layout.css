@@ -5,6 +5,12 @@ body {
     padding: 0;
 }
 
+h1 {
+    margin: 20px 0 0;
+    line-height: 86px;
+    font-size: 72px;
+}
+
 body > section {
     width: 50%;
     height: 100%;
