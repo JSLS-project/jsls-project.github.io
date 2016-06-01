@@ -1,0 +1,11 @@
+body {
+    font-family: 'Open Sans';
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+body > section {
+    width: 50%;
+    height: 100%;
+}
