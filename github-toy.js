@@ -30,7 +30,7 @@ window.onload = function(){
         user_link.innerText = response.commit.author.name + " (" + response.committer.login + ")"
         user_doc.appendChild(user_link);
         status_doc.appendChild(user_doc);
-        commit_text.innerText = response.commit.message;
+        commit_text.innerText = '"' + response.commit.message + '"';
         commit_doc.appendChild(commit_text);
         commit_link.setAttribute("onclick", "a('" + response.html_url + "')");
         commit_link.innerText = "commit: " + response.sha.substring(0,7);
