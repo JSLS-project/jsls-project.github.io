@@ -14,9 +14,11 @@ window.onload = function(){
     "setView" : function(view){
       this.view = view
       this.toy.setAttribute("data-github",this.view);
+      eval("window.gittoy." + view + "()");
     },
-    "pullStatus" : function(){},
-    "pullRepos" : function(){},
-    "pullData" : function(){}
+    "status" : function(){},
+    "repos" : function(){},
+    "graphs" : function(){}
   }
+  window.gittoy.setView("status");
 }
