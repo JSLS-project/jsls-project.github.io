@@ -34,6 +34,7 @@ window.onload = function(){
         commit_doc.appendChild(commit_text);
         commit_link.setAttribute("onclick", "a('" + response.html_url + "')");
         commit_link.innerText = "commit: " + response.sha.substring(0,7);
+        commit_doc.appendChild(document.createElement("br"));
         commit_doc.appendChild(commit_link);
         status_doc.appendChild(commit_doc);
         status.appendChild(status_doc);
