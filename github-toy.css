@@ -165,3 +165,19 @@ div#github-status > div > div:nth-of-type(2) > p {
     color: #000;
     border-radius: 6px;
 }
+
+div#github-widget > div {
+    display: none;
+}
+
+div#github-buttons[data-github="status"] div#github-status {
+    display: block;
+}
+
+div#github-buttons[data-github="repos"] div#github-repos {
+    display: block;
+}
+
+div#github-buttons[data-github="graphs"] div#github-graphs {
+    display: block;
+}
