@@ -1,0 +1,11 @@
+[onclick^="a("] {
+    cursor: pointer;
+}
+
+a[onclick^="a("] {
+    color: #9C85D8;
+}
+
+a[onclick^="a("]:hover {
+    color: #674EA7;
+}
