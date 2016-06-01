@@ -17,13 +17,10 @@ window.onload = function(){
       eval("window.gittoy." + view + "()");
     },
     "status" : function(){
-      alert("status")
     },
     "repos" : function(){
-      alert("repos")
     },
     "graphs" : function(){
-      alert("graphs")
     }
   }
   window.gittoy.setView("status");
