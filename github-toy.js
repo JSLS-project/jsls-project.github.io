@@ -46,5 +46,5 @@ window.onload = function(){
     "graphs" : function(){
     }
   }
-  window.gittoy.setView("status");
+  //window.gittoy.setView("status");
 }
