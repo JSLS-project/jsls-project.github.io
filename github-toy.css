@@ -136,7 +136,7 @@ div#github-buttons[data-github="graphs"] div#github-menu > div:nth-of-type(1) > 
 
 div#github-widget {
     height: 180px;
-    background: #DFDBE8;
+    background: #1D1B22;
 }
 
 div#github-status > div > div:nth-of-type(1) {
@@ -154,12 +154,12 @@ div#github-status > div > div:nth-of-type(1)::after {
     bottom: 0;
     width: 22px;
     right: 0;
-    box-shadow: -40px 0 40px -20px #DFDBE8 inset;
+    box-shadow: -40px 0 40px -20px #1D1B22 inset;
 }
 
 div#github-status > div > div:nth-of-type(2) > p {
     display: inline-block;
-    background: #674EA7;
+    background: #85D8B2;
     padding: 10px;
     margin: 3px;
 }
