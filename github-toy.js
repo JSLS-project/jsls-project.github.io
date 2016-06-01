@@ -1,5 +1,5 @@
 window.onload = function(){
-  var gittoy = {
+  window.gittoy = {
     "toy" : document.getElementById("github-buttons"),
     "door" : document.getElementById("github-buttons").getAttribute("data-door"),
     "view" : document.getElementById("github-buttons").getAttribute("data-github"),
