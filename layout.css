@@ -17,3 +17,7 @@ section#navigation {
 div#page-header {
     height: 300px;
 }
+
+section#blog {
+    flex-grow: 1;
+}
