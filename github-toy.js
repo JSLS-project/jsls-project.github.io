@@ -11,7 +11,10 @@ window.onload = function(){
       }
       this.toy.setAttribute("data-door",this.door);
     },
-    "setView" : function(view){},
+    "setView" : function(view){
+      this.view = view
+      this.toy.setAttribute("data-github",this.view);
+    },
     "pullStatus" : function(){},
     "pullRepos" : function(){},
     "pullData" : function(){}
