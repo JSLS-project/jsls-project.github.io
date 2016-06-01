@@ -134,3 +134,21 @@ div#github-widget {
     height: 180px;
     background: #DFDBE8;
 }
+
+div#github-status > div > div:nth-of-type(1) {
+    line-height: 35px;
+    white-space: nowrap;
+    margin: 0 13px;
+    overflow: hidden;
+    position: relative;
+}
+
+div#github-status > div > div:nth-of-type(1)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 22px;
+    right: 0;
+    box-shadow: -40px 0 40px -20px #DFDBE8 inset;
+}
