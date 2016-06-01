@@ -1,6 +1,5 @@
 body {
     font-family: 'Open Sans';
-    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -66,5 +65,5 @@ div#page-header > img {
 }
 
 section#blog {
-    flex-grow: 1;
+    
 }
