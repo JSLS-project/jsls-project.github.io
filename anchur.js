@@ -17,6 +17,7 @@ var anchur = {
       return;
     }
     hash = hash.substr(1);
+    var place = hash;
     if(this.library.primaries.hasOwnProperty(hash)){
       this.library.primaries[hash]();
     }else if(this.library.alternates.hasOwnProperty(hash)){
@@ -25,7 +26,9 @@ var anchur = {
       this.library.categoricals[hash.substring(0,1)](hash.substr(1));
     }else{
       console.error("Bad url hash (#" + hash + ") used. Please use a valid url hash (like #blog, for the blog section). Use #a_url_hashes to find more on how to use them or view the general about section with #about");
+      return;
     }
+    console.log("Direction to '" + place + "' using #" + hash + " was a success!");
   },
   "library" : {
     "primaries" : {
