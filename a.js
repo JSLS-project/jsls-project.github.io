@@ -1,4 +1,6 @@
-function a(href, target){
+function a(event, href, target){
+  event.preventDefault();
+  event.stopPropagation();
   var tar = target ? target : "_blank";
   if(typeof href === "undefined" || href === ""){
     return;
