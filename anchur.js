@@ -1,6 +1,5 @@
 var anchur = {
   "renav" : function(navigation){
-    alert("renavving");
     var container = document.getElementsByClassName("id_blog-nav")[0],
         container = document.getElementsByClassName("id_blog-content")[0];
     if(navigation.length == 1){
@@ -43,6 +42,7 @@ var anchur = {
     "primaries" : {
       "blog" : function(){
         window.anchur.renav(["blog"]);
+        alert("renavving");
       },
       "commits" : function(){
         window.anchur.renav(["commits"]);
@@ -50,6 +50,7 @@ var anchur = {
       "contributors" : function(){
         console.log(typeof window.anchur.renav);
         window.anchur.renav(["contributors"]);
+        alert("renavving");
       },
       "repos" : function(){
         window.anchur.renav(["repos"]);
