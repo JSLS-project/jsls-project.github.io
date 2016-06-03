@@ -1,5 +1,4 @@
-function a(event, href, target){
-  event.preventDefault();
+function a(href, target){
   var tar = target ? target : "_blank";
   if(typeof href === "undefined" || href === ""){
     return;
@@ -14,5 +13,4 @@ function a(event, href, target){
     evObj.initEvent('click', true, false);
     el.dispatchEvent(evObj);
   }
-  return false;
 }
