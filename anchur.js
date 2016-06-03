@@ -61,6 +61,7 @@ var anchur = {
 }
 
 if(window.location.hash) {
+  console.log(window.location.hash);
   anchur.process(window.location.hash);
 } else {
   anchur.process("#blog");
@@ -73,6 +74,7 @@ if (("onhashchange" in window)) {
   }
 }
 else {
+  console.log(window.location.hash);
   var prevHash = window.location.hash;
   window.setInterval(function () {
     if (window.location.hash != prevHash) {
