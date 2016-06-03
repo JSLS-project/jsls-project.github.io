@@ -86,7 +86,7 @@ section#blog {
     position: relative;
 }
 
-section#blog > nav {
+nav#blog-nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -104,6 +104,15 @@ div#blog-content {
     background: #353535;
     padding: 0 80px;
     overflow-y: auto;
+}
+
+nav#blog-subs {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: #AA94E4;
 }
 
 @media (max-height: 880px) {
