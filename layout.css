@@ -163,6 +163,96 @@ section.id_blog > nav > ul > li {
     cursor: pointer;
 }
 
+section.id_blog[data-nav="blog"] a[href="#blog"] {
+    color: #EDE7FF;
+    position: relative;
+}
+
+section.id_blog[data-nav="blog"] a[href="#blog"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 5px;
+    background: #EDE7FF;
+    width: 20px;
+}
+
+section.id_blog[data-nav="commits"] a[href="#commits"] {
+    color: #EDE7FF;
+    position: relative;
+}
+
+section.id_blog[data-nav="commits"] a[href="#commits"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 5px;
+    background: #EDE7FF;
+    width: 20px;
+}
+
+section.id_blog[data-nav="contributors"] a[href="#contributors"] {
+    color: #EDE7FF;
+    position: relative;
+}
+
+section.id_blog[data-nav="contributors"] a[href="#contributors"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 5px;
+    background: #EDE7FF;
+    width: 20px;
+}
+
+section.id_blog[data-nav="repos"] a[href="#repos"] {
+    color: #EDE7FF;
+    position: relative;
+}
+
+section.id_blog[data-nav="repos"] a[href="#repos"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 5px;
+    background: #EDE7FF;
+    width: 20px;
+}
+
+section.id_blog[data-nav="graph"] a[href="#graph"] {
+    color: #EDE7FF;
+    position: relative;
+}
+
+section.id_blog[data-nav="graph"] a[href="#graph"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 5px;
+    background: #EDE7FF;
+    width: 20px;
+}
+
+section.id_blog[data-nav="about"] a[href="#about"] {
+    color: #EDE7FF;
+    position: relative;
+}
+
+section.id_blog[data-nav="about"] a[href="#about"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 5px;
+    background: #EDE7FF;
+    width: 20px;
+}
+
 @media (max-height: 880px) {
     section.id_navigation {
         max-width: 360px;
