@@ -23,7 +23,7 @@ var anchur = {
     }else if(this.library.categoricals.hasOwnProperty(hash.substring(0,1))){
       this.library.categoricals[hash.substring(0,1)](hash.substr(1));
     }else{
-      console.error("Bad url hash (#" + hash + ") used. Please use a valid url hash (like #blog, for the blog section). (use #a_url_hashes to find more on how to use them or view the general about section with #about)");
+      console.error("Bad url hash (#" + hash + ") used. Please use a valid url hash (like #blog, for the blog section). Use #a_url_hashes to find more on how to use them or view the general about section with #about");
     }
   },
   "library" : {
