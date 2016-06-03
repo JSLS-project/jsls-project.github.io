@@ -143,6 +143,22 @@ nav#blog-nav > ul > li {
     font-size: 22px;
 }
 
+nav#blog-nav > ul > li > * {
+    display: inline-block;
+}
+
+nav#blog-nav > ul > li > i {
+    width: 60px;
+    vertical-align: top;
+    line-height: inherit;
+    text-align: center;
+    font-size: 32px;
+}
+
+section#blog > nav > ul > li {
+    cursor: pointer;
+}
+
 @media (max-height: 880px) {
     section#navigation {
         max-width: 360px;
