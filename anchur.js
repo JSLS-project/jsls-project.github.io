@@ -14,6 +14,7 @@ var anchur = {
       }else{
         this.pending.hash = hash;
       }
+      return;
     }
     if(this.library.primaries.hasOwnProperty(hash)){
       this.library.primaries[hash]();
