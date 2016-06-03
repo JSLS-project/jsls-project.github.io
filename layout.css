@@ -84,4 +84,9 @@ section#blog {
     section#navigation {
         max-width: 360px;
     }
+    
+    section#navigation h4 {
+        font-size: 18px;
+        line-height: 30px;
+    }
 }
