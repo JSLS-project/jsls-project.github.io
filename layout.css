@@ -133,6 +133,16 @@ section#blog > nav > ul > li > * {
     height: 100%;
 }
 
+nav#blog-nav > ul > :first-child {
+    position: absolute;
+    left: 0;
+}
+
+nav#blog-nav > ul > li {
+    line-height: 60px;
+    font-size: 22px;
+}
+
 @media (max-height: 880px) {
     section#navigation {
         max-width: 360px;
