@@ -1,10 +1,11 @@
-function a(href){
+function a(href, target){
+  var tar = target ? target : "_blank";
   if(typeof href === "undefined" || href === ""){
     return;
   }
   var el = document.createElement("a");
-  el.setAttribute('href',href);
-  el.setAttribute('target', '_blank')
+  el.setAttribute('href', href);
+  el.setAttribute('target', tar);
   if (el.fireEvent) {
     el.fireEvent('onclick');
   } else {
