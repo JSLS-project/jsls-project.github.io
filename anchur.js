@@ -25,7 +25,6 @@ var anchur = {
     }
     hash = hash.substr(1);
     var place = hash;
-    console.log(this.library.primaries.hasOwnProperty(hash));
     if(this.library.primaries.hasOwnProperty(hash)){
       this.library.primaries[hash]();
     }else if(this.library.alternates.hasOwnProperty(hash)){
@@ -48,6 +47,7 @@ var anchur = {
         window.anchur.renav(["commits"]);
       },
       "contributors" : function(){
+        console.log("testing 1... 2... 3...");
         window.anchur.renav(["contributors"]);
       },
       "repos" : function(){
