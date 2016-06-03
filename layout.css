@@ -100,8 +100,10 @@ div#blog-content {
     top: 60px;
     left: 0;
     right: 0;
-    bottom : 0;
+    bottom: 0;
     background: #353535;
+    padding: 0 80px;
+    overflow-y: auto;
 }
 
 @media (max-height: 880px) {
