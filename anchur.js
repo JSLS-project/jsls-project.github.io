@@ -7,7 +7,7 @@ var anchur = {
   }, 
   "hash" : window.location.hash ? window.location.hash : "#blog",
   "process" : function(hash){
-    console.log(window.location.hash);
+    hash = hash.substr(1);
     if(window.pageready === false){
       if(this.pending.hash === ""){
         this.pending.hash = hash;
@@ -60,14 +60,14 @@ var anchur = {
 }
 
 if(window.location.hash) {
-  anchur.process(window.location.hash.substr(1));
+  anchur.process(window.location.hash);
 } else {
   anchur.process("blog");
 }
 
 if (("onhashchange" in window)) {
   window.onhashchange = function () {
-  anchur.process(window.location.hash.substr(1));
+  anchur.process(window.location.hash);
   }
 }
 else {
@@ -75,7 +75,7 @@ else {
   window.setInterval(function () {
     if (window.location.hash != prevHash) {
       prevHash = window.location.hash;
-      anchur.process(prevHash.substr(1));
+      anchur.process(prevHash);
     }
   }, 100);
 }
