@@ -1,14 +1,26 @@
 var anchur = {
+  "pending" : {
+    "hash",
+    "process" : function(){
+      window.anchur.process(this.hash);
+    }
+  } 
   "hash" : window.location.hash ? window.location.hash.substr(1) : "blog",
   "process" : function(hash){
+    if(window.pageready === false){
+      this.pending.hash = hash;
+      if(typeof this.pending.hash === "undefined"){
+        window.ready(this.pending.process);
+      }
+    }
     if(this.library.primaries.hasOwnProperty(hash)){
-    
+      this.library.primaries[hash]();
     }else if(this.library.alternates.hasOwnProperty(hash)){
-      
-    }else if(this.library.alternates.hasOwnProperty(hash.substring(0,1))){
-      
+      this.library.primaries[this.library.alternates[hash]]();
+    }else if(this.library.categoricals.hasOwnProperty(hash.substring(0,1))){
+      this.library.categoricals[hash.substring(0,1)](hash.substr(1));
     }else{
-      console.error("Bad url hash (#" + hash + ") used. Please use a valid url hash.");
+      console.error("Bad url hash (#" + hash + ") used. Please use a valid url hash (like #blog, for the blog section). (use #a_url_hashes to find more on how to use them or view the general about section with #about)");
     }
   },
   "library" : {
@@ -31,14 +43,15 @@ var anchur = {
       "repositories" : "repos",
       "r" : "repos",
       "g" : "graph"
+    },
+    "categoricals" : {
+      "b" : function(tail){},
+      "c" : function(tail){},
+      "u" : function(tail){},
+      "r" : function(tail){},
+      "g" : function(tail){},
+      "a" : function(tail){}
     }
-  },
-  "categoricals" : {
-    "b" : function(tail){},
-    "c" : function(tail){},
-    "u" : function(tail){},
-    "r" : function(tail){},
-    "g" : function(tail){}
   }
 }
 
@@ -47,6 +60,7 @@ if(window.location.hash) {
 } else {
   anchur.process("blog");
 }
+
 if (("onhashchange" in window)) {
   window.onhashchange = function () {
   anchur.process(window.location.hash.substr(1));
