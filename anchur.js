@@ -48,7 +48,7 @@ var anchur = {
       },
       "contributors" : function(){
         console.log(typeof window.anchur.renav);
-        window.anchur.renav(["contributors"]).call();
+        window.anchur.renav.call(window.anchur,["contributors"]);
       },
       "repos" : function(){
         window.anchur.renav(["repos"]);
