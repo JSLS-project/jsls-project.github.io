@@ -2,10 +2,10 @@ var anchur = {
   "pending" : {
     "hash" : "",
     "process" : function(){
-      window.anchur.process(window.anchur.pending.hash.substr(1));
+      window.anchur.process(window.anchur.pending.hash);
     }
   }, 
-  "hash" : window.location.hash ? window.location.hash.substr(1) : "blog",
+  "hash" : window.location.hash ? window.location.hash : "#blog",
   "process" : function(hash){
     if(window.pageready === false){
       if(this.pending.hash === ""){
