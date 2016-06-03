@@ -2,7 +2,7 @@ var anchur = {
   "renav" : function(navigation){
     var container = document.getElementsByClassName("id_blog-nav")[0],
         container = document.getElementsByClassName("id_blog-content")[0];
-    if(navigation.length === 1){
+    if(navigation.length == 1){
       container.setAttribute("data-nav",navigation[1]);
     }else{}
   },
@@ -47,7 +47,6 @@ var anchur = {
         window.anchur.renav(["commits"]);
       },
       "contributors" : function(){
-        console.log("testing 1... 2... 3...");
         window.anchur.renav(["contributors"]);
       },
       "repos" : function(){
