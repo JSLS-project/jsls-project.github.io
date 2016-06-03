@@ -1,4 +1,11 @@
 var anchur = {
+  "renav" : function(navigation){
+    var container = document.getElementsByClassName("id_blog-nav")[0],
+        container = document.getElementsByClassName("id_blog-content")[0];
+    if(navigation.length === 1){
+      container.setAttribute("data-nav",navigation[1]);
+    }else{}
+  },
   "pending" : {
     "hash" : "",
     "process" : function(){
@@ -33,12 +40,24 @@ var anchur = {
   },
   "library" : {
     "primaries" : {
-      "blog" : function(){},
-      "commits" : function(){},
-      "contributors" : function(){},
-      "repos" : function(){},
-      "graph" : function(){},
-      "about" : function(){}
+      "blog" : function(){
+        window.anchur.renav(["blog"]);
+      },
+      "commits" : function(){
+        window.anchur.renav(["commits"]);
+      },
+      "contributors" : function(){
+        window.anchur.renav(["contributors"]);
+      },
+      "repos" : function(){
+        window.anchur.renav(["repos"]);
+      },
+      "graph" : function(){
+        window.anchur.renav(["graph"]);
+      },
+      "about" : function(){
+        window.anchur.renav(["about"]);
+      }
     },
     "alternates" : {
       "b" : "blog",
@@ -56,12 +75,18 @@ var anchur = {
       "faq" : "a_faq"
     },
     "categoricals" : {
-      "b" : function(tail){},
-      "c" : function(tail){},
-      "u" : function(tail){},
-      "r" : function(tail){},
-      "g" : function(tail){},
-      "a" : function(tail){}
+      "b" : function(tail){
+      },
+      "c" : function(tail){
+      },
+      "u" : function(tail){
+      },
+      "r" : function(tail){
+      },
+      "g" : function(tail){
+      },
+      "a" : function(tail){
+      }
     }
   }
 }
