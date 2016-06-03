@@ -79,3 +79,9 @@ div#page-header > img {
 section#blog {
     flex-grow: 1;
 }
+
+@media (max-height: 880px) {
+    section#navigation {
+        max-width: 360px;
+    }
+}
