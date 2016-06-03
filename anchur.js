@@ -1,6 +1,6 @@
 var anchur = {
   "pending" : {
-    "hash",
+    "hash" : "",
     "process" : function(){
       window.anchur.process(this.hash);
     }
@@ -9,7 +9,7 @@ var anchur = {
   "process" : function(hash){
     if(window.pageready === false){
       this.pending.hash = hash;
-      if(typeof this.pending.hash === "undefined"){
+      if(this.pending.hash === ""){
         window.ready(this.pending.process);
       }
     }
