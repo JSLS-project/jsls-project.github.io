@@ -129,7 +129,7 @@ section.id_blog > nav > ul > * {
     vertical-align: top;
 }
 
-section.id_blog > nav > ul > li > * {
+section.id_blog > nav > ul > li > a > * {
     height: 100%;
 }
 
