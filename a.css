@@ -2,10 +2,18 @@
     cursor: pointer;
 }
 
-a[onclick^="a("] {
+a {
     color: #9C85D8;
 }
 
-a[onclick^="a("]:hover {
+a:hover {
+    color: #674EA7;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
     color: #674EA7;
 }
