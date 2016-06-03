@@ -43,7 +43,22 @@ var anchur = {
 }
 
 if(window.location.hash) {
-  
+  anchur.process(window.location.hash.substr(1));
 } else {
-  
+  anchur.process("blog");
+}
+
+if (("onhashchange" in window) && !($.browser.msie)) {
+  window.onhashchange = function () {
+  anchur.process(window.location.hash.substr(1));
+  }
+}
+else {
+  var prevHash = window.location.hash;
+  window.setInterval(function () {
+    if (window.location.hash != prevHash) {
+      prevHash = window.location.hash;
+      anchur.process(prevHash.substr(1));
+    }
+  }, 100);
 }
