@@ -7,7 +7,6 @@ var anchur = {
   }, 
   "hash" : window.location.hash ? window.location.hash : "#blog",
   "process" : function(hash){
-    hash = hash.substr(1);
     if(window.pageready === false){
       if(this.pending.hash === ""){
         this.pending.hash = hash;
@@ -17,6 +16,7 @@ var anchur = {
       }
       return;
     }
+    hash = hash.substr(1);
     if(this.library.primaries.hasOwnProperty(hash)){
       this.library.primaries[hash]();
     }else if(this.library.alternates.hasOwnProperty(hash)){
@@ -60,20 +60,17 @@ var anchur = {
 }
 
 if(window.location.hash) {
-  console.log(window.location.hash);
   anchur.process(window.location.hash);
 } else {
   anchur.process("#blog");
 }
 
 if (("onhashchange" in window)) {
-  console.log(window.location.hash);
   window.onhashchange = function () {
   anchur.process(window.location.hash);
   }
 }
 else {
-  console.log(window.location.hash);
   var prevHash = window.location.hash;
   window.setInterval(function () {
     if (window.location.hash != prevHash) {
