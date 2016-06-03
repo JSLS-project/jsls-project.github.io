@@ -15,4 +15,5 @@ function a(event, href, target){
     evObj.initEvent('click', true, false);
     el.dispatchEvent(evObj);
   }
+  return false;
 }
