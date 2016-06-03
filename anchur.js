@@ -4,7 +4,7 @@ var anchur = {
     "process" : function(){
       window.anchur.process(this.hash);
     }
-  } 
+  }, 
   "hash" : window.location.hash ? window.location.hash.substr(1) : "blog",
   "process" : function(hash){
     if(window.pageready === false){
