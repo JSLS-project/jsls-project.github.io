@@ -143,11 +143,15 @@ nav.id_blog-nav > ul > li {
     font-size: 22px;
 }
 
-nav.id_blog-nav > ul > li > * {
+nav.id_blog-nav > ul > li > a {
     display: inline-block;
 }
 
-nav.id_blog-nav > ul > li > i {
+nav.id_blog-nav > ul > li > a > *{
+    display: inline-block;
+}
+
+nav.id_blog-nav > ul > li > a > i {
     width: 60px;
     vertical-align: top;
     line-height: inherit;
