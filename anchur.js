@@ -21,7 +21,8 @@ var anchur = {
     if(this.library.primaries.hasOwnProperty(hash)){
       this.library.primaries[hash]();
     }else if(this.library.alternates.hasOwnProperty(hash)){
-      this.library.primaries[this.library.alternates[hash]]();
+      this.process(this.library.alternates["#" + hash]);
+      return;
     }else if(this.library.categoricals.hasOwnProperty(hash.substring(0,1))){
       this.library.categoricals[hash.substring(0,1)](hash.substr(1));
     }else{
@@ -36,7 +37,8 @@ var anchur = {
       "commits" : function(){},
       "contributors" : function(){},
       "repos" : function(){},
-      "graph" : function(){}
+      "graph" : function(){},
+      "about" : function(){}
     },
     "alternates" : {
       "b" : "blog",
@@ -49,7 +51,9 @@ var anchur = {
       "people" : "contributors",
       "repositories" : "repos",
       "r" : "repos",
-      "g" : "graph"
+      "g" : "graph",
+      "a" : "about",
+      "faq" : "a_faq"
     },
     "categoricals" : {
       "b" : function(tail){},
