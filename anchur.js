@@ -63,10 +63,11 @@ var anchur = {
 if(window.location.hash) {
   anchur.process(window.location.hash);
 } else {
-  anchur.process("blog");
+  anchur.process("#blog");
 }
 
 if (("onhashchange" in window)) {
+  console.log(window.location.hash);
   window.onhashchange = function () {
   anchur.process(window.location.hash);
   }
