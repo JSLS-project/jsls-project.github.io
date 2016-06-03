@@ -8,7 +8,6 @@ var anchur = {
   "hash" : window.location.hash ? window.location.hash : "#blog",
   "process" : function(hash){
     console.log(hash);
-    hash = hash.substr(1);
     if(window.pageready === false){
       if(this.pending.hash === ""){
         this.pending.hash = hash;
