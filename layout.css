@@ -82,6 +82,28 @@ section#blog {
     flex-grow: 1;
 }
 
+section#blog {
+    position: relative;
+}
+
+section#blog > nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #AA94E4;
+}
+
+div#blog-content {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom : 0;
+    background: #353535;
+}
+
 @media (max-height: 880px) {
     section#navigation {
         max-width: 360px;
