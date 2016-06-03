@@ -115,6 +115,23 @@ nav#blog-subs {
     background: #62597C;
 }
 
+section#blog > nav > ul {
+    margin: 0;
+    padding: 0 80px;
+    list-style: none;
+    height: 100%;
+}
+
+section#blog > nav > ul > * {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+
+section#blog > nav > ul > li > * {
+    height: 100%;
+}
+
 @media (max-height: 880px) {
     section#navigation {
         max-width: 360px;
