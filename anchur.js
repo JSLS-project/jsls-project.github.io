@@ -1,6 +1,6 @@
 var anchur = {
   "pending" : {
-    "hash" : "",
+    "hash" : null,
     "process" : function(){
       window.anchur.process(this.hash);
     }
@@ -8,9 +8,11 @@ var anchur = {
   "hash" : window.location.hash ? window.location.hash.substr(1) : "blog",
   "process" : function(hash){
     if(window.pageready === false){
-      this.pending.hash = hash;
-      if(this.pending.hash === ""){
+      if(this.pending.hash === null){
+        this.pending.hash = hash;
         window.ready(this.pending.process);
+      }else{
+        this.pending.hash = hash;
       }
     }
     if(this.library.primaries.hasOwnProperty(hash)){
