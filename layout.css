@@ -46,12 +46,12 @@ body > section {
     height: 100%;
 }
 
-section#sudo {
+section.id_sudo {
     max-width: 420px;
     flex-basis: 420px;
 }
 
-section#navigation {
+section.id_navigation {
     max-width: 420px;
     flex-basis: 420px;
     position: fixed;
@@ -63,30 +63,30 @@ section#navigation {
     flex-direction: column;
 }
 
-div#page-header {
+div.id_page-header {
     text-align: center;
     box-shadow: 0 4px 6px -3px #949494;
     padding-bottom: 10px;
 }
 
-div#page-header > * {
+div.id_page-header > * {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-div#page-header > img {
+div.id_page-header > img {
     width: 260px;
 }
 
-section#blog {
+section.id_blog {
     flex-grow: 1;
 }
 
-section#blog {
+section.id_blog {
     position: relative;
 }
 
-nav#blog-nav {
+nav.id_blog-nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -95,7 +95,7 @@ nav#blog-nav {
     background: #AA94E4;
 }
 
-div#blog-content {
+div.id_blog-content {
     position: absolute;
     top: 60px;
     left: 0;
@@ -106,7 +106,7 @@ div#blog-content {
     overflow-y: auto;
 }
 
-nav#blog-subs {
+nav.id_blog-subs {
     position: absolute;
     top: 60px;
     left: 0;
@@ -115,7 +115,7 @@ nav#blog-subs {
     background: #62597C;
 }
 
-section#blog > nav > ul {
+section.id_blog > nav > ul {
     position: relative;
     margin: 0;
     padding: 0 80px;
@@ -123,31 +123,31 @@ section#blog > nav > ul {
     height: 100%;
 }
 
-section#blog > nav > ul > * {
+section.id_blog > nav > ul > * {
     display: inline-block;
     height: 100%;
     vertical-align: top;
 }
 
-section#blog > nav > ul > li > * {
+section.id_blog > nav > ul > li > * {
     height: 100%;
 }
 
-nav#blog-nav > ul > :first-child {
+nav.id_blog-nav > ul > :first-child {
     position: absolute;
     left: 0;
 }
 
-nav#blog-nav > ul > li {
+nav.id_blog-nav > ul > li {
     line-height: 60px;
     font-size: 22px;
 }
 
-nav#blog-nav > ul > li > * {
+nav.id_blog-nav > ul > li > * {
     display: inline-block;
 }
 
-nav#blog-nav > ul > li > i {
+nav.id_blog-nav > ul > li > i {
     width: 60px;
     vertical-align: top;
     line-height: inherit;
@@ -155,22 +155,22 @@ nav#blog-nav > ul > li > i {
     font-size: 32px;
 }
 
-section#blog > nav > ul > li {
+section.id_blog > nav > ul > li {
     cursor: pointer;
 }
 
 @media (max-height: 880px) {
-    section#navigation {
+    section.id_navigation {
         max-width: 360px;
         flex-basis: 360px;
     }
 
-    section#sudo {
+    section.id_sudo {
         max-width: 360px;
         flex-basis: 360px;
     }
     
-    section#navigation h4 {
+    section.id_navigation h4 {
         font-size: 18px;
         line-height: 30px;
     }
