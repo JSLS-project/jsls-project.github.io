@@ -1,5 +1,6 @@
 var anchur = {
   "renav" : function(navigation){
+    alert("renavving");
     var container = document.getElementsByClassName("id_blog-nav")[0],
         container = document.getElementsByClassName("id_blog-content")[0];
     if(navigation.length == 1){
@@ -48,7 +49,7 @@ var anchur = {
       },
       "contributors" : function(){
         console.log(typeof window.anchur.renav);
-        window.anchur.renav.call(window.anchur,["contributors"]);
+        window.anchur.renav(["contributors"]);
       },
       "repos" : function(){
         window.anchur.renav(["repos"]);
