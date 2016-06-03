@@ -1,4 +1,5 @@
 function a(event, href, target){
+  event.preventDefault();
   var tar = target ? target : "_blank";
   if(typeof href === "undefined" || href === ""){
     return;
