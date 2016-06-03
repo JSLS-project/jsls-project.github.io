@@ -3,7 +3,13 @@ var anchur = {
   "process" : function(hash){
     if(this.library.primaries.hasOwnProperty(hash)){
     
-    }elseif(){}
+    }else if(this.library.alternates.hasOwnProperty(hash)){
+      
+    }else if(this.library.alternates.hasOwnProperty(hash.substring(0,1))){
+      
+    }else{
+      console.error("bad url hash used");
+    }
   },
   "library" : {
     "primaries" : {
