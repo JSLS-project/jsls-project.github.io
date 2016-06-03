@@ -89,8 +89,8 @@ section#blog {
     }
 
     section#sudo {
-        max-width: 420px;
-        flex-basis: 420px;
+        max-width: 360px;
+        flex-basis: 360px;
     }
     
     section#navigation h4 {
