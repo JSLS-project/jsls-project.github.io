@@ -48,7 +48,7 @@ if(window.location.hash) {
   anchur.process("blog");
 }
 
-if (("onhashchange" in window) && !($.browser.msie)) {
+if (("onhashchange" in window)) {
   window.onhashchange = function () {
   anchur.process(window.location.hash.substr(1));
   }
