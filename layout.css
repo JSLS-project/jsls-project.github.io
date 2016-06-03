@@ -116,6 +116,7 @@ nav#blog-subs {
 }
 
 section#blog > nav > ul {
+    position: relative;
     margin: 0;
     padding: 0 80px;
     list-style: none;
