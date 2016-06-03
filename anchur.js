@@ -8,7 +8,7 @@ var anchur = {
     }else if(this.library.alternates.hasOwnProperty(hash.substring(0,1))){
       
     }else{
-      console.error("bad url hash used");
+      console.error("Bad url hash (#" + hash + ") used. Please use a valid url hash.");
     }
   },
   "library" : {
