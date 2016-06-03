@@ -36,7 +36,7 @@ var anchur = {
       console.error("Bad url hash (#" + hash + ") used. Please use a valid url hash (like #blog, for the blog section). Use #a_url_hashes to find more on how to use them or view the general about section with #about");
       return;
     }
-    console.info("Direction to '" + place + "' using #" + hash + " was a success!");
+    console.info("Direction to '" + place + "' was a success!");
   },
   "library" : {
     "primaries" : {
